@@ -1,0 +1,19 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3002",
+  "loginUser": "angeloreche@gmail.com",
+  "loginPassword": "Tungalacume023@",
+  "executionArgs": {
+    "projectName": "ronchi-odontologia",
+    "projectPath": "d:\\projetos antigravity\\ronchi-odontologia",
+    "testIds": [],
+    "additionalInstruction": "Verify that all buttons work, animations are smooth, and the WhatsApp redistribution links are correct in both the Hero and Contact sections. Also check if the Contact Form button text is \"Enviar\".",
+    "envs": {
+      "API_KEY": "sk-user--r-pVKPr6L4g97LGjqXf3HL7WKd_UI7-8k0eQ-GjADQwqmKoFu61oEQda1NjwFxSAf7xcSU0_WoOXTI1UFTSGK5w-qw_gGYYGmOkzo4nB6qQSWiMThMCGtCZjWZIToWucM0"
+    }
+  },
+  "serverPort": 56869,
+  "proxy": "http://447ad8f2-a620-4823-bc17-3db1cabf4e99:7ZwKsGSYxAjGFOVZ3nNfPMPlHLyzoYLY@tun.testsprite.com:8080"
+}

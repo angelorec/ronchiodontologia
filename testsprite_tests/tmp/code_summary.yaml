@@ -1,0 +1,48 @@
+version: "2"
+type: frontend
+tech_stack:
+  - TypeScript
+  - React
+  - Vite
+  - Tailwind CSS
+  - Framer Motion
+  - Lucide React
+routes:
+  - path: /
+    file: src/App.tsx
+    auth_required: false
+    description: Main landing page for Ronchi Odontologia
+features:
+  - name: Contact Form
+    description: Users can send appointment requests via a form.
+    files:
+      - components/Contact.tsx
+    entry_route: /
+    user_interactions:
+      - Scroll to Contact section
+      - Fill in name, phone, service, and message
+      - Click Enviar button
+    api_calls:
+      - method: POST
+        endpoint: https://formspree.io/f/xkovjlqr
+    auth_required: false
+  - name: WhatsApp Redirection
+    description: Users can click WhatsApp buttons to open a direct chat.
+    files:
+      - components/Hero.tsx
+      - components/Contact.tsx
+    entry_route: /
+    user_interactions:
+      - Click WhatsApp button in Hero
+      - Click Agendar por WhatsApp button in Contact section
+    auth_required: false
+  - name: Interactive Services
+    description: Browsing services with hover effects and animations.
+    files:
+      - components/Services.tsx
+    entry_route: /
+    user_interactions:
+      - Scroll through services
+      - Hover over service cards to see animations
+    auth_required: false
+known_limitations: []

@@ -1,0 +1,1330 @@
+[
+  {
+    "id": "TC001",
+    "title": "Jump to Serviços section from navbar",
+    "description": "Verifies that clicking the 'Serviços' navbar anchor scrolls to the Services section and shows its header.",
+    "category": "Navigation (Navbar)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Navbar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Serviços\" in the navbar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Serviços\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Services section\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Jump to Contato section from navbar (success path)",
+    "description": "Verifies that clicking the 'Contato' navbar anchor scrolls to the Contact section and shows its header.",
+    "category": "Navigation (Navbar)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Navbar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Contato\" in the navbar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Contato\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contact section\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Click Início returns to top/hero content",
+    "description": "Verifies that clicking 'Início' brings the user back to the top section of the page.",
+    "category": "Navigation (Navbar)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Serviços\" in the navbar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Services section\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Início\" in the navbar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Hero section\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Jump to Especialista section from navbar",
+    "description": "Verifies that clicking 'Especialista' scrolls to the specialist section and its heading is visible.",
+    "category": "Navigation (Navbar)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Navbar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Especialista\" in the navbar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Especialista\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Especialista section\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Jump to Galeria section from navbar",
+    "description": "Verifies that clicking 'Galeria' scrolls to the gallery section and its heading is visible.",
+    "category": "Navigation (Navbar)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Navbar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Galeria\" in the navbar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Galeria\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Galeria section\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Jump to Depoimentos section from navbar",
+    "description": "Verifies that clicking 'Depoimentos' scrolls to the testimonials section and its heading is visible.",
+    "category": "Navigation (Navbar)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Navbar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Depoimentos\" in the navbar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Depoimentos\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Depoimentos section\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Navbar remains accessible after scrolling (sticky behavior)",
+    "description": "Verifies that the navbar remains visible after navigating to a lower section so users can continue jumping between sections.",
+    "category": "Navigation (Navbar)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Galeria\" in the navbar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Galeria section\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Navbar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Contato\" in the navbar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contact section\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Contato anchor target missing: remain at top and show visual error indication (if applicable)",
+    "description": "Verifies the defined error/edge behavior when the Contact anchor target cannot be found: page does not scroll and a visible error indication appears.",
+    "category": "Navigation (Navbar)",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Hero section\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Contato\" in the navbar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Hero section\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"erro\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Hero displays primary title and WhatsApp CTA on the landing page",
+    "description": "Verifies the hero section renders with the expected headline and a visible WhatsApp scheduling CTA.",
+    "category": "Hero Section & CTA",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the main hero title text is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"WhatsApp\" button in the hero section is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"WhatsApp\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Hero background animation/visual layer is present",
+    "description": "Verifies a visible animated/visual background element is present in the hero section.",
+    "category": "Hero Section & CTA",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Hero section\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Hero background\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Hero background animation\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Clicking Hero WhatsApp CTA attempts to open WhatsApp chat (URL intent check)",
+    "description": "Verifies the CTA click results in navigation toward a WhatsApp deep link (wa.me / api.whatsapp.com) for a prefilled message.",
+    "category": "Hero Section & CTA",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"WhatsApp\" button in the hero section is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"WhatsApp\" button in the hero section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"whatsapp\""
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "WhatsApp deep link includes an encoded prefilled message parameter",
+    "description": "Verifies the WhatsApp link includes a text/message parameter indicating a prefilled message is being passed.",
+    "category": "Hero Section & CTA",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"WhatsApp\" button in the hero section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"text=\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"%20\""
+      }
+    ]
+  },
+  {
+    "id": "TC013",
+    "title": "Fallback modal appears when WhatsApp cannot be opened and shows clinic phone number",
+    "description": "Verifies a user-visible fallback modal appears and displays the clinic phone number when WhatsApp is unavailable/blocked.",
+    "category": "Hero Section & CTA",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"WhatsApp\" button in the hero section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"WhatsApp fallback\" modal is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"telefone\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Clinic phone number\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC014",
+    "title": "Fallback modal can be dismissed",
+    "description": "Verifies the fallback modal can be closed and the user returns to the landing page hero content.",
+    "category": "Hero Section & CTA",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"WhatsApp\" button in the hero section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"WhatsApp fallback\" modal is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Close\" button in the modal"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"WhatsApp fallback\" modal is not visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"WhatsApp\" button in the hero section is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC015",
+    "title": "Hero CTA is usable after scrolling away and back (persisting visibility/state)",
+    "description": "Verifies the hero CTA remains available and functional after the user scrolls and returns to the hero area.",
+    "category": "Hero Section & CTA",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"WhatsApp\" button in the hero section is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the middle of the page"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the top of the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"WhatsApp\" button in the hero section is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"WhatsApp\" button in the hero section"
+      }
+    ]
+  },
+  {
+    "id": "TC016",
+    "title": "View specialist profile details in the Especialista section",
+    "description": "Verifies the specialist section is reachable from the home page and shows key identity and credential details.",
+    "category": "Especialista (Specialist Profile)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Especialista\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Dra. Jaqueline Ronchi Soares\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"CRO\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an element \"Qualifications list\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an element \"Professional photo\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC017",
+    "title": "Open specialist photo in a modal from the Especialista section",
+    "description": "Verifies clicking the specialist photo enlarges it in a modal overlay.",
+    "category": "Especialista (Specialist Profile)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Especialista\" section"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Professional photo\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an element \"Photo modal\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an element \"Enlarged specialist photo\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Press Escape"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an element \"Photo modal\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC018",
+    "title": "Close the enlarged photo modal using an on-screen close control",
+    "description": "Verifies the photo modal can be closed using a visible close button/control after opening.",
+    "category": "Especialista (Specialist Profile)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Especialista\" section"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Professional photo\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an element \"Photo modal\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Close\" control in the photo modal"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an element \"Photo modal\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC019",
+    "title": "Especialista section renders without missing key text content",
+    "description": "Verifies the section does not appear blank and includes multiple pieces of visible profile information.",
+    "category": "Especialista (Specialist Profile)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Especialista\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Especialista\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Dra.\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an element \"Credentials/qualifications content block\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an element \"Professional photo\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC020",
+    "title": "View Services section on the home page",
+    "description": "Verifies the Services section is visible on the landing page and contains service cards users can browse.",
+    "category": "Services (Interactive Services)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Services section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Services\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify at least one service card is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a service card shows a treatment name and a short description"
+      }
+    ]
+  },
+  {
+    "id": "TC021",
+    "title": "Click service card without hovering first still opens details/CTA",
+    "description": "Verifies users on touch devices (no hover) can click a service card and still reach details or a call-to-action.",
+    "category": "Services (Interactive Services)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Services section"
+      },
+      {
+        "type": "action",
+        "description": "Click a visible service card without hovering"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a service details view or call-to-action area is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Agendar\" or \"WhatsApp\" or \"Contato\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC022",
+    "title": "Service card details/CTA can be dismissed or exited without breaking the page",
+    "description": "Verifies the user can exit the service details/CTA state (if presented as a modal/expanded panel) and return to browsing services.",
+    "category": "Services (Interactive Services)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Services section"
+      },
+      {
+        "type": "action",
+        "description": "Click a visible service card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a service details view or call-to-action area is visible"
+      },
+      {
+        "type": "action",
+        "description": "Press Escape"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Services section is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC023",
+    "title": "Image carousel advances to the next image using the next arrow",
+    "description": "Verifies the gallery carousel can move forward and shows a different image after clicking next.",
+    "category": "Gallery & Results",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Galeria\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Gallery image carousel\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Current carousel image\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the carousel \"Next\" arrow button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Current carousel image\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Galeria\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC024",
+    "title": "Image carousel moves back to the previous image using the previous arrow",
+    "description": "Verifies the gallery carousel can move backward and remains functional for reverse navigation.",
+    "category": "Gallery & Results",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Galeria\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Gallery image carousel\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the carousel \"Next\" arrow button"
+      },
+      {
+        "type": "action",
+        "description": "Click on the carousel \"Previous\" arrow button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Current carousel image\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Gallery image carousel\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC025",
+    "title": "Carousel continues to advance across multiple next clicks",
+    "description": "Verifies repeated forward navigation does not break the carousel and continues to show images.",
+    "category": "Gallery & Results",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Galeria\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Gallery image carousel\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the carousel \"Next\" arrow button"
+      },
+      {
+        "type": "action",
+        "description": "Click on the carousel \"Next\" arrow button"
+      },
+      {
+        "type": "action",
+        "description": "Click on the carousel \"Next\" arrow button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Current carousel image\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Gallery image carousel\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC026",
+    "title": "Before/after comparison slider responds to moving the handle toward 'after'",
+    "description": "Verifies the before/after slider handle can be moved and the visible comparison changes toward the after image.",
+    "category": "Gallery & Results",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Galeria\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Before/after comparison slider\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Comparison slider handle\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"After\" side of the comparison slider track"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"After image area\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Comparison slider handle\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC027",
+    "title": "Before/after comparison slider responds to moving the handle toward 'before'",
+    "description": "Verifies the comparison can be shifted back toward the before image after moving it toward after.",
+    "category": "Gallery & Results",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Galeria\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Before/after comparison slider\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"After\" side of the comparison slider track"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Before\" side of the comparison slider track"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Before image area\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Before/after comparison slider\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC028",
+    "title": "Gallery section loads without broken-image UI",
+    "description": "Verifies that gallery images render normally (no placeholder/error indicators) when assets load successfully.",
+    "category": "Gallery & Results",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Galeria\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Gallery image carousel\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Current carousel image\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"placeholder\" is not visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"erro\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC029",
+    "title": "View Depoimentos section and confirm testimonials list is displayed",
+    "description": "Verifies the testimonials section is reachable on the home page and shows at least one testimonial item.",
+    "category": "Testimonials (Depoimentos)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Depoimentos\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Depoimentos\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"a testimonial item\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"star rating\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC030",
+    "title": "Expand a testimonial to view the full text",
+    "description": "Verifies a testimonial can be clicked to expand and reveal the full testimonial content.",
+    "category": "Testimonials (Depoimentos)",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Depoimentos\" section"
+      },
+      {
+        "type": "action",
+        "description": "Click on a testimonial item"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"expanded testimonial text\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"star rating\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC031",
+    "title": "Expand and collapse the same testimonial",
+    "description": "Verifies a testimonial can be toggled between expanded and collapsed states using clicks.",
+    "category": "Testimonials (Depoimentos)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Depoimentos\" section"
+      },
+      {
+        "type": "action",
+        "description": "Click on a testimonial item"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"expanded testimonial text\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the same testimonial item again"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"expanded testimonial text\" is not visible"
+      }
+    ]
+  },
+  {
+    "id": "TC032",
+    "title": "Switch expansion from one testimonial to another",
+    "description": "Verifies clicking a second testimonial shows its content and does not keep the first one as the visible expanded content.",
+    "category": "Testimonials (Depoimentos)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Depoimentos\" section"
+      },
+      {
+        "type": "action",
+        "description": "Click on a testimonial item near the top of the list"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"expanded testimonial text\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on a different testimonial item"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"expanded testimonial text for the newly clicked testimonial\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC033",
+    "title": "Testimonials render star ratings alongside feedback",
+    "description": "Verifies that star ratings are present and visible for multiple testimonials (not only one).",
+    "category": "Testimonials (Depoimentos)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the \"Depoimentos\" section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"star rating\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll within the \"Depoimentos\" section to another testimonial item"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"star rating\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC034",
+    "title": "Submit contact form successfully with all fields completed",
+    "description": "Verifies a visitor can complete the appointment form and see a visible success confirmation message.",
+    "category": "Contact Form & Location",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Maria Silva\" into the name field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"(11) 98888-7777\" into the phone field"
+      },
+      {
+        "type": "action",
+        "description": "Select a service option from the service dropdown"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Gostaria de agendar uma avaliação.\" into the message field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Enviar\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a success confirmation message is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC035",
+    "title": "Required field validation: missing name then successful submit after correction",
+    "description": "Verifies the form blocks submission when the name is missing, then submits successfully after the field is corrected.",
+    "category": "Contact Form & Location",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Type \"(11) 97777-6666\" into the phone field"
+      },
+      {
+        "type": "action",
+        "description": "Select a service option from the service dropdown"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Quero informações sobre valores e horários.\" into the message field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Enviar\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a validation error for the missing name field is visible"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Ana Souza\" into the name field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Enviar\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a success confirmation message is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC036",
+    "title": "Required field validation: missing phone then successful submit after correction",
+    "description": "Verifies the form blocks submission when the phone is missing, then submits successfully after adding the phone.",
+    "category": "Contact Form & Location",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Paulo Almeida\" into the name field"
+      },
+      {
+        "type": "action",
+        "description": "Select a service option from the service dropdown"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Preciso agendar para a próxima semana.\" into the message field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Enviar\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a validation error for the missing phone field is visible"
+      },
+      {
+        "type": "action",
+        "description": "Type \"(21) 96666-5555\" into the phone field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Enviar\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a success confirmation message is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC037",
+    "title": "Required field validation: missing service selection then successful submit after correction",
+    "description": "Verifies the form blocks submission when no service is selected and succeeds after selecting a service.",
+    "category": "Contact Form & Location",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Carla Nunes\" into the name field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"(31) 95555-4444\" into the phone field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Tenho interesse em atendimento e quero agendar.\" into the message field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Enviar\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a validation error for the missing service field is visible"
+      },
+      {
+        "type": "action",
+        "description": "Select a service option from the service dropdown"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Enviar\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a success confirmation message is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC038",
+    "title": "Required field validation: missing message then successful submit after correction",
+    "description": "Verifies the form blocks submission when the message is missing and succeeds after adding a message.",
+    "category": "Contact Form & Location",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Renata Lima\" into the name field"
+      },
+      {
+        "type": "action",
+        "description": "Type \"(41) 94444-3333\" into the phone field"
+      },
+      {
+        "type": "action",
+        "description": "Select a service option from the service dropdown"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Enviar\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a validation error for the missing message field is visible"
+      },
+      {
+        "type": "action",
+        "description": "Type \"Pode ser no período da tarde.\" into the message field"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Enviar\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a success confirmation message is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC039",
+    "title": "Contact section shows key clinic contact details and address",
+    "description": "Verifies the contact section presents visible clinic contact information including the address text.",
+    "category": "Contact Form & Location",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"R. Manoel Thiago de Castro, 332\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Como Chegar\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Enviar\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC040",
+    "title": "Hero section WhatsApp button remains accessible and visible on initial load",
+    "description": "Verifies the primary WhatsApp booking call-to-action is visible without scrolling on the landing page.",
+    "category": "WhatsApp Redirection (Direct Booking)",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Hero\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"WhatsApp\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the top of the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"WhatsApp\" is visible"
+      }
+    ]
+  }
+]
